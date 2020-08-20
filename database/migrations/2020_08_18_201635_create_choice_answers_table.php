@@ -15,10 +15,10 @@ class CreateChoiceAnswersTable extends Migration
     {
         Schema::create('choice_answers', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("question_id");
-            $table->unsignedBigInteger("choice_id");
-            $table->foreign("question_id")->references("id")->on("questions");
-            $table->foreign("choice_id")->references("id")->on("question_choices");
+            $table->unsignedInteger("question_id");
+            $table->unsignedInteger("choice_id");
+//            $table->foreign("question_id")->references("id")->on("questions");
+//            $table->foreign("choice_id")->references("id")->on("question_choices");
             $table->timestamps();
         });
     }

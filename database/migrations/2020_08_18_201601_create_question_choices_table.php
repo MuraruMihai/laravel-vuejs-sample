@@ -15,8 +15,7 @@ class CreateQuestionChoicesTable extends Migration
     {
         Schema::create('question_choices', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("question_id");
-            $table->foreign("question_id")->references("id")->on("questions");
+            $table->unsignedInteger("question_id");
             $table->string("choice");
             $table->timestamps();
         });
