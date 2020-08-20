@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1>{{ question.question }}</h1>
+        <h3>{{ question.question }}</h3>
         <div v-for="choice in choices">
             <input type="radio" :name="'choice'+choice.id" v-bind:value="choice.choice" v-on:click="selectAnswer(choice.choice ,choice.id,1)" v-bind:checked="choice.checked">
             <label v-bind:for="choice.id">{{ choice.choice }}</label>
@@ -8,6 +8,18 @@
 
     </div>
 </template>
+<style lang="css" scoped>
+    .container{
+        margin-top: 75px;
+        border: 1px solid #abb3c6;
+        padding: 30px;
+    }
+    h3{
+        text-decoration: underline;
+        text-decoration-color: #6db8b8;
+        font-family: roboto;
+    }
+</style>
 <script>
     export default {
         data: function (){
@@ -43,7 +55,6 @@
                             choice: item.choice
                         }
                     });
-                    console.log(this.choices);
                 })
                 .catch( function (error){
                     console.log(error);
@@ -51,13 +62,11 @@
         },
 
         selectAnswer: function (choice, choiceId, questionId){
-            console.log(choiceId, questionId)
             const postData = {
                 choice_id: choiceId,
                 question_id: questionId,
                 choice: choice
             }
-            console.log("postDta: " + postData);
             axios.post('api/store_answer', postData)
             .then(function (response){
                 window.location = response.data.redirect;
