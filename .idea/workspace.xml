@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63cba138-b31b-4526-bcb1-e7b754125313" name="Default Changelist" comment="laravel install">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/AnswerPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/answers.blade.php" afterDir="false" />
+    <list default="true" id="63cba138-b31b-4526-bcb1-e7b754125313" name="Default Changelist" comment="get data from api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_201635_create_choice_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_201635_create_choice_answers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AnswerPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AnswerPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/QuestionPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/QuestionPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/answers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/answers.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
