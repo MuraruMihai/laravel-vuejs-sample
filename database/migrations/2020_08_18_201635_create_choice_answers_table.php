@@ -17,8 +17,7 @@ class CreateChoiceAnswersTable extends Migration
             $table->id();
             $table->unsignedInteger("question_id");
             $table->unsignedInteger("choice_id");
-//            $table->foreign("question_id")->references("id")->on("questions");
-//            $table->foreign("choice_id")->references("id")->on("question_choices");
+            $table->string("choice");
             $table->timestamps();
         });
     }
